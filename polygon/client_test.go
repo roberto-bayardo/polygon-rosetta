@@ -1244,6 +1244,24 @@ func TestBlock(t *testing.T) {
 			},
 			error: nil,
 		},
+		"block with EIP-1559 transactions": {
+			blockNum:          22743478,
+			blockNumHexString: "0x15b09b6",
+			useLatest:         false,
+			author:            "0xbe188d6641e8b680743a4815dfa0f6208038960f",
+			blockHash:         "0x168014f6a57da23c2bb37712c36e302c50f63ce402589681b4ab0337d58643ea",
+			transactions: []string{
+				"0x5eebf10b54ade620cd62f26a5bb8e667bd3677571758aeff3c56dfebd76004f7",
+				"0x3f35fb14e5fce0eab47256e06c5112f741a177347bb86c0f32be089db15f96d5",
+				"0xabc1c35ec9f88bfea9d2e70fc492d92dfea42db4700abccd09cfbdd81a12e672",
+				"0x548d49a1f981be048d193d9987c93374f8d0d0868225fea296d58689c2115291",
+			},
+			contractAddresses: nil,
+			partialBlockIdentifier: &RosettaTypes.PartialBlockIdentifier{
+				Index: RosettaTypes.Int64(int64(22743478)),
+			},
+			error: nil,
+		},
 	}
 
 	for name, test := range tests {

@@ -1,0 +1,419 @@
+{
+  "block": {
+    "block_identifier": {
+      "index": 22743478,
+      "hash": "0x168014f6a57da23c2bb37712c36e302c50f63ce402589681b4ab0337d58643ea"
+    },
+    "parent_block_identifier": {
+      "index": 22743477,
+      "hash": "0x0dc4067688a5c9b2be9305c659338e7b0f6ba0edb8261dbe99488b05e12e7228"
+    },
+    "timestamp": 1639677021000,
+    "transactions": [
+      {
+        "transaction_identifier": {
+          "hash": "0x168014f6a57da23c2bb37712c36e302c50f63ce402589681b4ab0337d58643ea"
+        },
+        "operations": [
+          {
+            "operation_identifier": {
+              "index": 0
+            },
+            "type": "MINER_REWARD",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x0000000000000000000000000000000000000000"
+            },
+            "amount": {
+              "value": "0",
+              "currency": {
+                "symbol": "MATIC",
+                "decimals": 18
+              }
+            }
+          }
+        ]
+      },
+      {
+        "transaction_identifier": {
+          "hash": "0x5eebf10b54ade620cd62f26a5bb8e667bd3677571758aeff3c56dfebd76004f7"
+        },
+        "operations": [
+          {
+            "operation_identifier": {
+              "index": 0
+            },
+            "type": "FEE",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0xEF4e5750a803741c0B9Ed8b6aF356192a1769b85"
+            },
+            "amount": {
+              "value": "-731850000000000",
+              "currency": {
+                "symbol": "MATIC",
+                "decimals": 18
+              }
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 1
+            },
+            "related_operations": [
+              {
+                "index": 0
+              }
+            ],
+            "type": "FEE",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0xbe188D6641E8b680743A4815dFA0f6208038960F"
+            },
+            "amount": {
+              "value": "731850000000000",
+              "currency": {
+                "symbol": "MATIC",
+                "decimals": 18
+              }
+            }
+          }
+        ],
+        "metadata": {
+          "gas_limit": "0x725a",
+          "gas_price": "0x5d21dba00",
+          "receipt": {
+            "blockHash": "0x168014f6a57da23c2bb37712c36e302c50f63ce402589681b4ab0337d58643ea",
+            "blockNumber": "0x15b09b6",
+            "contractAddress": "0x0000000000000000000000000000000000000000",
+            "cumulativeGasUsed": "0x725a",
+            "gasUsed": "0x725a",
+            "logs": [
+              {
+                "address": "0x0000000000000000000000000000000000001010",
+                "blockHash": "0x168014f6a57da23c2bb37712c36e302c50f63ce402589681b4ab0337d58643ea",
+                "blockNumber": "0x15b09b6",
+                "data": "0x0000000000000000000000000000000000000000000000000002999d1b44438a0000000000000000000000000000000000000000000000000d01cfc7dfdda91d00000000000000000000000000000000000000000000026875bd50575f622e090000000000000000000000000000000000000000000000000cff362ac499659300000000000000000000000000000000000000000000026875bfe9f47aa67193",
+                "logIndex": "0x0",
+                "removed": false,
+                "topics": [
+                  "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+                  "0x0000000000000000000000000000000000000000000000000000000000001010",
+                  "0x000000000000000000000000ef4e5750a803741c0b9ed8b6af356192a1769b85",
+                  "0x000000000000000000000000be188d6641e8b680743a4815dfa0f6208038960f"
+                ],
+                "transactionHash": "0x5eebf10b54ade620cd62f26a5bb8e667bd3677571758aeff3c56dfebd76004f7",
+                "transactionIndex": "0x0"
+              }
+            ],
+            "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000000080000100000000004000000000000000000000000000000000000000000000000080000000000000000002000000000000000000000000000000000000000080000000000000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000400000000000000000100040000000000000000000000000000000000000000000000000000000000000000000100000",
+            "root": "0x",
+            "status": "0x1",
+            "transactionHash": "0x5eebf10b54ade620cd62f26a5bb8e667bd3677571758aeff3c56dfebd76004f7",
+            "transactionIndex": "0x0"
+          },
+          "trace": {
+            "from": "0xef4e5750a803741c0b9ed8b6af356192a1769b85",
+            "gas": "0x1ea2",
+            "gasUsed": "0x1ea2",
+            "input": "0xbeb92f55000000000000000000000000707faf59ecded56b89349a90d29a885e2e9bc913",
+            "output": "0x",
+            "to": "0x2f1a3022217767ae345a6b0c3cc96649ff0143d6",
+            "type": "CALL",
+            "value": "0x0"
+          }
+        }
+      },
+      {
+        "transaction_identifier": {
+          "hash": "0x3f35fb14e5fce0eab47256e06c5112f741a177347bb86c0f32be089db15f96d5"
+        },
+        "operations": [
+          {
+            "operation_identifier": {
+              "index": 0
+            },
+            "type": "FEE",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x7b8821555e2763726e4F16a3c21D68B4683F1CDF"
+            },
+            "amount": {
+              "value": "-4350850000000000",
+              "currency": {
+                "symbol": "MATIC",
+                "decimals": 18
+              }
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 1
+            },
+            "related_operations": [
+              {
+                "index": 0
+              }
+            ],
+            "type": "FEE",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0xbe188D6641E8b680743A4815dFA0f6208038960F"
+            },
+            "amount": {
+              "value": "4350849999999993",
+              "currency": {
+                "symbol": "MATIC",
+                "decimals": 18
+              }
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 2
+            },
+            "type": "",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x0000000000000000000000000000000000000000"
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 3
+            },
+            "related_operations": [
+              {
+                "index": 2
+              }
+            ],
+            "type": "",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        ],
+        "metadata": {
+          "gas_limit": "0x2ebcd",
+          "gas_price": "0x5d21dba00",
+          "receipt": {
+            "blockHash": "0x168014f6a57da23c2bb37712c36e302c50f63ce402589681b4ab0337d58643ea",
+            "blockNumber": "0x15b09b6",
+            "contractAddress": "0x0000000000000000000000000000000000000000",
+            "cumulativeGasUsed": "0x31a2c",
+            "gasUsed": "0x2a7d2",
+            "logs": [],
+            "logsBloom": "0x00008000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000088000000000040000000000200000000000000000000008020008800000820000000000000400004100008020204000000020000000000000000000000000000000000000000080000011000000000000000000000000000000000000000010000000000080000000000000000000220200000000000000000000000000000000000000000000000002000000004000000002000010000001001000000000000040000000000000100040000000000010000000000000020000000000000004000000000000004000000000100000",
+            "root": "0x",
+            "status": "0x1",
+            "transactionHash": "0x3f35fb14e5fce0eab47256e06c5112f741a177347bb86c0f32be089db15f96d5",
+            "transactionIndex": "0x1",
+            "type": "0x2"
+          },
+          "trace": {
+          }
+        }
+      },
+      {
+        "transaction_identifier": {
+          "hash": "0xabc1c35ec9f88bfea9d2e70fc492d92dfea42db4700abccd09cfbdd81a12e672"
+        },
+        "operations": [
+          {
+            "operation_identifier": {
+              "index": 0
+            },
+            "type": "FEE",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x7B921b95Fd68E629e03CADaEefc6B842217e3593"
+            },
+            "amount": {
+              "value": "-53040000148512",
+              "currency": {
+                "symbol": "MATIC",
+                "decimals": 18
+              }
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 1
+            },
+            "related_operations": [
+              {
+                "index": 0
+              }
+            ],
+            "type": "FEE",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0xbe188D6641E8b680743A4815dFA0f6208038960F"
+            },
+            "amount": {
+              "value": "53040000148505",
+              "currency": {
+                "symbol": "MATIC",
+                "decimals": 18
+              }
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 2
+            },
+            "type": "",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x0000000000000000000000000000000000000000"
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 3
+            },
+            "related_operations": [
+              {
+                "index": 2
+              }
+            ],
+            "type": "",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        ],
+        "metadata": {
+          "gas_limit": "0x52e0",
+          "gas_price": "0x9502f90e",
+          "receipt": {
+            "blockHash": "0x168014f6a57da23c2bb37712c36e302c50f63ce402589681b4ab0337d58643ea",
+            "blockNumber": "0x15b09b6",
+            "contractAddress": "0x0000000000000000000000000000000000000000",
+            "cumulativeGasUsed": "0x36d0c",
+            "gasUsed": "0x52e0",
+            "logs": [
+              {
+                "address": "0x0000000000000000000000000000000000001010",
+                "blockHash": "0x168014f6a57da23c2bb37712c36e302c50f63ce402589681b4ab0337d58643ea",
+                "blockNumber": "0x15b09b6",
+                "data": "0x0000000000000000000000000000000000000000000000000000303d565be0000000000000000000000000000000000000000000000000000e3f72d564fff2a200000000000000000000000000000000000000000000026875cf5f07af4c6ed50000000000000000000000000000000000000000000000000e3f42980ea412a200000000000000000000000000000000000000000000026875cf8f4505a84ed5",
+                "logIndex": "0x6",
+                "removed": false,
+                "topics": [
+                  "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+                  "0x0000000000000000000000000000000000000000000000000000000000001010",
+                  "0x0000000000000000000000007b921b95fd68e629e03cadaeefc6b842217e3593",
+                  "0x000000000000000000000000be188d6641e8b680743a4815dfa0f6208038960f"
+                ],
+                "transactionHash": "0xabc1c35ec9f88bfea9d2e70fc492d92dfea42db4700abccd09cfbdd81a12e672",
+                "transactionIndex": "0x2"
+              }
+            ],
+            "logsBloom": "0x10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000800000800000000000000000000100000000004000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000080000000080000000000200000000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000000000000000000000100040000000000000000000000000000000000000000000000000000000000000000000100000",
+            "root": "0x",
+            "status": "0x1",
+            "transactionHash": "0xabc1c35ec9f88bfea9d2e70fc492d92dfea42db4700abccd09cfbdd81a12e672",
+            "transactionIndex": "0x2",
+            "type": "0x2"
+          },
+          "trace": {
+          }
+        }
+      },
+      {
+        "transaction_identifier": {
+          "hash": "0x548d49a1f981be048d193d9987c93374f8d0d0868225fea296d58689c2115291"
+        },
+        "operations": [
+          {
+            "operation_identifier": {
+              "index": 0
+            },
+            "type": "FEE",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x64165472c57771287B957B5399d91AD707c70D72"
+            },
+            "amount": {
+              "value": "-288387500807485",
+              "currency": {
+                "symbol": "MATIC",
+                "decimals": 18
+              }
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 1
+            },
+            "related_operations": [
+              {
+                "index": 0
+              }
+            ],
+            "type": "FEE",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0xbe188D6641E8b680743A4815dFA0f6208038960F"
+            },
+            "amount": {
+              "value": "288387500807478",
+              "currency": {
+                "symbol": "MATIC",
+                "decimals": 18
+              }
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 2
+            },
+            "type": "",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x0000000000000000000000000000000000000000"
+            }
+          },
+          {
+            "operation_identifier": {
+              "index": 3
+            },
+            "related_operations": [
+              {
+                "index": 2
+              }
+            ],
+            "type": "",
+            "status": "SUCCESS",
+            "account": {
+              "address": "0x0000000000000000000000000000000000000000"
+            }
+          }
+        ],
+        "metadata": {
+          "gas_limit": "0x33450",
+          "gas_price": "0x9502f90e",
+          "receipt": {
+            "blockHash": "0x168014f6a57da23c2bb37712c36e302c50f63ce402589681b4ab0337d58643ea",
+            "blockNumber": "0x15b09b6",
+            "contractAddress": "0x0000000000000000000000000000000000000000",
+            "cumulativeGasUsed": "0x52fa7",
+            "gasUsed": "0x1c29b",
+            "logs": [],
+            "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008001040000004000000000200000000080000040040000000008000000800000000000000000000100000000004000000000020000008000000000000800000000000010000080000010000000000000000000000000000000000000000000000000000080000000000000200000220000000000000000000000000000000000000000000000000000000000004000000002000000000001000000000000000000000000000000100040000020000010000000000000000000000000000000200180000000000000000000100000",
+            "root": "0x",
+            "status": "0x1",
+            "transactionHash": "0x548d49a1f981be048d193d9987c93374f8d0d0868225fea296d58689c2115291",
+            "transactionIndex": "0x3",
+            "type": "0x2"
+          },
+          "trace": {
+          }
+        }
+      }
+    ]
+  }
+}
