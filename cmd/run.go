@@ -92,6 +92,7 @@ func runRunCmd(cmd *cobra.Command, args []string) error {
 			SkipAdminCalls: cfg.SkipGethAdmin,
 			Headers:        cfg.GethHeaders,
 			BurntContract:  cfg.BurntContract,
+			LeanTraces:     cfg.LeanTraces,
 		})
 		if err != nil {
 			return fmt.Errorf("%w: cannot initialize polygon client", err)

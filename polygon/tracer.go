@@ -23,15 +23,11 @@ import (
 
 // convert raw eth data from client to rosetta
 
-const (
-	tracerPath = "polygon/call_tracer.js"
-)
-
 var (
 	tracerTimeout = "120s"
 )
 
-func loadTraceConfig() (*tracers.TraceCallConfig, error) {
+func loadTraceConfig(tracerPath string) (*tracers.TraceCallConfig, error) {
 	loadedFile, err := ioutil.ReadFile(tracerPath)
 	if err != nil {
 		return nil, fmt.Errorf("%w: could not load tracer file", err)

@@ -33,7 +33,6 @@ import (
 	"github.com/ethereum/go-ethereum/p2p"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"golang.org/x/sync/semaphore"
 )
 
 const (
@@ -65,7 +64,6 @@ func TestStatus_NotReady(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()
@@ -102,7 +100,6 @@ func TestStatus_NotSyncing(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()
@@ -226,7 +223,6 @@ func TestStatus_NotSyncing_SkipAdminCalls(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 		skipAdminCalls:  true,
 	}
 
@@ -307,7 +303,6 @@ func TestStatus_Syncing(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()
@@ -436,7 +431,6 @@ func TestStatus_Syncing_SkipAdminCalls(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 		skipAdminCalls:  true,
 	}
 
@@ -891,7 +885,6 @@ func TestCall(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()
@@ -960,7 +953,6 @@ func TestCall_InvalidArgs(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()
@@ -988,7 +980,6 @@ func TestCall_InvalidMethod(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()
@@ -1329,7 +1320,6 @@ func TestPendingNonceAt(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()
@@ -1371,7 +1361,6 @@ func TestSuggestGasPrice_Nil(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()
@@ -1411,7 +1400,6 @@ func TestSuggestGasPrice_Valid(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()
@@ -1438,7 +1426,6 @@ func TestSendTransaction(t *testing.T) {
 		c:               mockJSONRPC,
 		g:               mockGraphQL,
 		currencyFetcher: cf,
-		traceSemaphore:  semaphore.NewWeighted(100),
 	}
 
 	ctx := context.Background()

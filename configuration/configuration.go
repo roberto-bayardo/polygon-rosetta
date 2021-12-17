@@ -81,6 +81,11 @@ const (
 	// by hosted node services. When not set, defaults to false.
 	SkipGethAdminEnv = "SKIP_GETH_ADMIN"
 
+	// LeanTracesEnv is an optional environment variable which
+	// trims raw block trace and receipt data from block responses.
+	// Defaults to false.
+	LeanTracesEnv = "LEAN_TRACES"
+
 	// GethHeadersEnv is an optional environment variable
 	// of a comma-separated list of key:value pairs to apply
 	// to geth clients as headers. When not set, defaults to []
@@ -106,6 +111,7 @@ type Configuration struct {
 	Port                   int
 	SkipGethAdmin          bool
 	GethHeaders            []*polygon.HTTPHeader
+	LeanTraces             bool
 
 	// Block Reward Data
 	Params *params.ChainConfig
@@ -176,6 +182,16 @@ func LoadConfiguration() (*Configuration, error) {
 			return nil, fmt.Errorf("%w: unable to parse SKIP_GETH_ADMIN %s", err, envSkipGethAdmin)
 		}
 		config.SkipGethAdmin = val
+	}
+
+	config.LeanTraces = false
+	envLeanTraces := os.Getenv(LeanTracesEnv)
+	if len(envLeanTraces) > 0 {
+		val, err := strconv.ParseBool(envLeanTraces)
+		if err != nil {
+			return nil, fmt.Errorf("%w: unable to parse LEAN_TRACES %s", err, envLeanTraces)
+		}
+		config.LeanTraces = val
 	}
 
 	envGethHeaders := os.Getenv(GethHeadersEnv)
